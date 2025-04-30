@@ -1,6 +1,7 @@
 import React from 'react'
 
-function Page() {
+async function Page() {
+  await new Promise((resolve) => setTimeout(resolve, 3000));
   return (
     <div>
       <p>Invoices Page</p>
